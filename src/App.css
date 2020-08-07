@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+ 
+}
+body{
+  background-color: #f5f6fa;
+}
+a:link  {
+  color:green;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: goldenrod;
+  
+}
+a[title]:hover:after {
+  content: attr(title);
+  position: relative;
+}
+ 
+h1.cov {
+  /* text-shadow: 0 10px 10px red; */
+  text-shadow: 0px 0px 7px #da0404;
+}
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  
+}
+.MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input {
+  background-color: white;
+}
+.app__header >h1{
+color: red;
+font-size: 2rem;
+
+}
+.app__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;    
+  justify-content: space-between;
+}
+.app__left{
+ flex:90%;
+ margin-right: 18px;
+}
+.app__right{
+  display: flex !important;
+  flex-direction: column !important;
+}
+.app__right .MuiCardContent-root{
+  display: flex;
+  flex-direction: column; 
+  flex-grow: 1;
+
+}
+.app__graph{
+  flex-grow: 1;
+}
+.app__graphTitle{
+
+  margin-top: 20px;
+}
+
+.chartjs-render-monitor{
+  
+    display: flex !important; 
+    width: 264px !important;
+    height: 150px !important;
+    margin-left: -24px !important; 
+      
+     
+  
+}
+
+.app__stats{
+  display: flex; 
+  justify-content: space-between;
+
+}
+.copyright{
+  
+ width: 50px;
+ height: 10px;
+}
+
+
+@media (max-width:790px){
+  .app { 
+  flex-direction: column;
+   }  
+}
